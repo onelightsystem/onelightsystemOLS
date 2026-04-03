@@ -7,6 +7,60 @@
 [![Firebase](https://img.shields.io/badge/Firebase-12.10-FFCA28.svg)](https://firebase.google.com)
 [![Node](https://img.shields.io/badge/Node-22.x-3c873a.svg)](https://nodejs.org/)
 
+
+**What is OLS?**
+OneLightSystem is a global Sun Light Meditation education platform dedicated to helping people awaken their inner light through daily practice, Light Time tracking, ethical living, and community connection.
+We deliver luminous, accessible meditation education via:
+
+Daily Asvitloaten progress posts (OLS3200 series)
+Interactive tools (Light Time Calendar, Equinox page, embeddable widgets)
+Guest-friendly experience with seamless upgrade path
+GrokAtenya AI assistant for meditation guidance
+Privacy-first design with explicit consent and data sovereignty
+
+Latest Progress Highlights (March 28 – April 3, 2026)
+April 3, 2026 – UI & Calendar Polish
+
+Complete rewrite of LightTime.tsx to custom CSS Grid with live “NOW” highlighting
+New Equinox.tsx page + teaser card
+Packages.tsx fully converted to typed styled-components with responsive gold-gradient layout
+Dark-page visibility fixes across OLSstudentProspect and OLShealth (antd blue-on-dark resolved)
+
+April 2, 2026 – Guest System & Privacy
+
+Deployed shared GuestVerificationModal (Apple ID, X.com, manual handle)
+Added Guest Dashboard + Guest Profile with Light Credits accrual
+Updated Privacy & Data Provision policies with full guest verification section
+
+March 28–29, 2026 – AI & Social Integration
+
+Launched GrokQuickChat widget on /login page with 5 pre-filled Sun Light Meditation suggestions
+Restored X (@asvitloaten) and Facebook feeds on СвітлоУкраїні page
+Major refactor of Referral public page with auth-gated menu and context-aware CTAs
+
+**Ongoing Foundation (2025–2026)**
+
+Full migration to Firebase Functions v7 (Node 22) and React 19
+25-tier referral system with Pyramid of Opportunity
+Privacy & cookie consent hardening with explicit accept/decline
+Developer tooling: CLAUDE.md project memory + automated commands
+Daily content cadence maintained for over a year
+
+**Current Focus Areas**
+
+Final Axios removal (replacing with secure native fetch + api.ts helper)
+Mobile optimization and dark-mode consistency
+Guest-to-member credit transfer flow
+Continued daily Asvitloaten posts (next: 3223.olslm+)
+
+**Live Platforms**
+
+Main Education Site: https://olsme.com
+Video Content: https://olsme.tv (beta)
+Public GitHub: https://github.com/onelightsystem/onelightsystemOLS
+
+
+
 **Mindful Random Video Chat + Meditation Education Platform**  
 Built with React 19 + TypeScript, Next.js 15, Vite, and Firebase. Real-time awaken chats with AI politeness scoring and Light Minutes tracking.
 
