@@ -13,6 +13,47 @@ All updates follow the luminous principles of **transparency, empowerment, and c
 
 ---
 
+## ☀️ v8.43.6 Release — April 03, 2026
+
+> **Tech Stack:** React 19.2 · Vite 8.0 · Tailwind 4.2 · Firebase 12.10 · TypeScript 6.0 · Node 22
+
+### UI & Calendar Polish
+
+- Complete rewrite of `LightTime.tsx` to custom CSS Grid with live "NOW" highlighting
+- New `Equinox.tsx` page + teaser card for seasonal meditation guidance
+- `Packages.tsx` fully converted to typed styled-components with responsive gold-gradient layout
+- Dark-page visibility fixes across OLSstudentProspect and OLShealth (antd blue-on-dark resolved)
+
+### Guest System & Privacy
+
+- Deployed shared `GuestVerificationModal` (Apple ID, X.com, manual handle)
+- Added Guest Dashboard + Guest Profile with Light Credits accrual
+- Updated Privacy & Data Provision policies with full guest verification section
+
+### AI & Social Integration
+
+- Launched `GrokQuickChat` widget on `/login` page with 5 pre-filled Sun Light Meditation suggestions
+- Restored X (@asvitloaten) and Facebook feeds on СвітлоУкраїні page
+- Major refactor of Referral public page with auth-gated menu and context-aware CTAs
+
+### Repository Housekeeping
+
+- Mirrored latest codebase from development repo into `onelightsystem/onelightsystemOLS`
+- Archived legacy pre-v8 content to `archive/legacy-pre-v8` branch
+- Cleaned README.md as public-facing overview referencing UPDATES.md for details
+
+### 💰 Sponsor Tiers — Lock In Current Pricing!
+
+| Tier | Price | Note |
+|------|-------|------|
+| 🌱 Seed of Light | **$5/mo** | *Changing soon — lock in now!* |
+| ☀️ Sun Supporter | **$20/mo** | *Changing soon — lock in now!* |
+| 🔥 Radiant Champion | **$50/mo** | *Changing soon — lock in now!* |
+
+→ **[Sponsor @onelightsystem](https://github.com/sponsors/onelightsystem)** | [olsme.com/sponsor](https://olsme.com/sponsor)
+
+---
+
 ## ☀️ v8.43.2 Release — April 02, 2026
 
 > 🔗 **Full release:** [onelightsystem/3265.olsme/releases/tag/v8.4](https://github.com/onelightsystem/3265.olsme/releases/tag/v8.4)  
