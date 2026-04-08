@@ -13,6 +13,85 @@ All updates follow the luminous principles of **transparency, empowerment, and c
 
 ---
 
+## 📦 @olsystem/lt-lh v0.1.2 Published — April 08, 2026
+
+🎉 **OneLightSystem has published its first open-source npm package!**
+
+`@olsystem/lt-lh` is now live on npm and the source repository is publicly available on GitHub. This marks a major milestone: OLS technology is now accessible to any developer building wellness apps, browser extensions, or desktop widgets.
+
+| Resource | Link |
+|:---------|:-----|
+| 📦 **npm package** | [npmjs.com/package/@olsystem/lt-lh](https://www.npmjs.com/package/@olsystem/lt-lh) |
+| 🐙 **GitHub repo** | [github.com/onelightsystem/LT-LH](https://github.com/onelightsystem/LT-LH) |
+
+### What Is Light Time?
+
+The **OLS Light Calendar** helps you align with the Sun's natural rhythm instead of arbitrary clock time:
+
+- **Light Hour (LH):** 1LH–12LH = 6:00 AM to 5:00 PM — your natural daylight energy window
+- **Dark Hour (dh):** 1dh–12dh = 6:00 PM to 5:00 AM — rest and recovery window
+- **Light Day (LD):** Day count since Winter Solstice (Dec 22, 2024)
+- **Light Year:** Currently 3406 (starting from the first known Sun Light Meditation)
+
+At 11:25 AM traditional time you may already be in **6LH** — halfway through your natural light day. This simple awareness supports better circadian health, meditation timing, and daily energy flow.
+
+### Features
+
+- ☀️ Convert standard clock time ↔ Light Hour / Dark Hour notation
+- 📅 Calculate Light Day (LD), quarter label, and Light Year from any date
+- ⚛️ React hook `useLightTime()` with auto-refresh (default 60 s interval)
+- 🧩 Embeddable vanilla widgets — zero build tools required
+- 🔷 Full TypeScript support with Zod-validated inputs
+- 📋 Built-in TypeScript snippet generator for quick integration
+- 🚫 No tracking. No login. No network calls at runtime.
+
+### API Reference
+
+| Function | Description |
+|:---------|:------------|
+| `getLightHour(hourIndex?)` | Current Light Hour result |
+| `getLightDay(date?, config?)` | Proper Day + quarter + year |
+| `useLightTime(config?)` | React hook with auto-refresh (default 60 s) |
+| `getLightTimeTable()` | Full 24-entry conversion table |
+| `formatLightTime(lightTime, verbose?)` | Format Light Time label for display |
+| `formatLightDay(info)` | Format day info for display |
+| `validateCoordinates(lat, lng)` | Validate lat/lng via Zod schema |
+| `generateSnippet(mode)` | Copy-ready TypeScript snippet (`"lh"` or `"lh+ld"`) |
+
+### React `useLightTime()` Hook Example
+
+```tsx
+import { useLightTime } from '@olsystem/lt-lh';
+
+function LightTimeDisplay() {
+  const { hour, day } = useLightTime();
+
+  return (
+    <div>
+      <div className="light-time-value">{hour.lightTime}</div>
+      <div>Light Day {day.day} • {day.quarterLabel} • Year {day.year}</div>
+    </div>
+  );
+}
+```
+
+### v0.1.2 Changelog Highlights
+
+- Cleaner large toggles — numbers only (`6LH` / `103LD`)
+- Elegant modals: click LD → glowing calendar orb, click LH → solar day arc diagram
+- Draggable toggles + bottom Settings drawer
+- Font size control + TypeScript snippet generator inside Settings
+- Enhanced About section with circadian rhythm explanation and roadmap
+- All widgets converted to TypeScript with proper types and option interfaces
+
+```bash
+npm install @olsystem/lt-lh
+```
+
+→ **[View on npm](https://www.npmjs.com/package/@olsystem/lt-lh)** | **[View on GitHub](https://github.com/onelightsystem/LT-LH)**
+
+---
+
 ## ☀️ v8.43.6 Release — April 03, 2026
 
 > **Tech Stack:** React 19.2 · Vite 8.0 · Tailwind 4.2 · Firebase 12.10 · TypeScript 6.0 · Node 22
