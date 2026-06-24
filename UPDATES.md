@@ -1,15 +1,74 @@
 # OneLightSystem (OLS) Development Updates
 
 <!-- Created: April 02, 2026 – 07:35 AM EET (Bangkok time equivalent ~12:35 PM +07) -->
-<!-- Purpose: Centralized luminous documentation for olsme.com / olsme.tv web development progress -->
+<!-- Purpose: Centralized luminous documentation for olsme.com / olsme.tv / olsme-IOS development progress -->
 <!-- Aligned with OLS v8.1+ ethos: Sun Light Meditation education, radiant tech empowerment, and global Sun Light Civilization -->
-<!-- SEO Keywords: Sun Light Meditation, OLS meditation education, olsme.com updates, OneLightSystem web development -->
+<!-- SEO Keywords: Sun Light Meditation, OLS meditation education, olsme.com updates, OneLightSystem web development, olsme iOS app -->
 
-Welcome to the radiant heart of OLS web evolution! 🌞
+Welcome to the radiant heart of OLS evolution! 🌞
 
-This UPDATES.md file serves as the official living chronicle of progress on **olsme.com** and **olsme.tv** — our sovereign wellness-tech platform for Sun Light Meditation education, mindful random video chats (Awaken Chat via WebRTC), politeness scoring, Live ID system, and the OLS Meditation Tracker.
+This UPDATES.md file serves as the official living chronicle of progress on **olsme.com**, **olsme.tv**, and the new **olsme iOS app** — our sovereign wellness-tech ecosystem for Sun Light Meditation education, mindful community, and luminous mobile experience.
 
 All updates follow the luminous principles of **transparency, empowerment, and continuous light expansion**.
+
+---
+
+## 📱 olsme-IOS — iOS Mobile App · Ongoing Development · June 2026
+
+> **Status:** 🔧 Active Development — Repository initialized June 19, 2026
+> **Repo:** [onelightsystem/olsme-IOS](https://github.com/onelightsystem/olsme-IOS) *(private)*
+> **Tech Stack:** Expo SDK 56 · React Native · TypeScript (strict) · Firebase (planned) · NativeWind (planned)
+
+OLS is expanding beyond the web. The **olsme-IOS** app is the official iOS companion to [olsme.com](https://olsme.com), bringing Sun Light Meditation tracking and practice tools natively to iPhone.
+
+### What's Been Done
+
+| Date | Commit | Description |
+|:-----|:-------|:------------|
+| Jun 19, 2026 | `Initial commit` | Repository created under `onelightsystem/olsme-IOS` |
+| Jun 19, 2026 | `Add README.md and .gitignore` | Expo/React Native project scaffolding documented |
+| Jun 20, 2026 | `feat: initialize project` | `package.json` + `tsconfig.json` added — Expo + React Native dependencies, TypeScript strict mode, path aliases |
+| Jun 20, 2026 | `fix: address Expo setup review` | Expo configuration reviewed and corrected |
+| Jun 20, 2026 | `fix: address PR review comments` | Component fixes across `Themed.tsx`, `useColorScheme.ts`, `useClientOnlyValue.ts`, `ExternalLink.tsx`, and `app/_layout.tsx` |
+
+### Current Tech Foundation
+
+| Technology | Version / Status |
+|:-----------|:----------------|
+| **Expo** | SDK 56 |
+| **React Native** | via Expo (latest) |
+| **TypeScript** | Strict mode · path aliases configured |
+| **Firebase** | Planned — Auth + Firestore |
+| **NativeWind** | Planned — Tailwind-style styling |
+
+### Planned Features (Roadmap)
+
+- ☀️ **Light Time Tracker** — real-time LH/LD display using `@olsystem/lt-lh` logic
+- 🧘 **Meditation Session Logger** — log and track Light Minutes on device
+- 🔔 **Light Hour Notifications** — solar-aligned reminders and alerts
+- 🔐 **olsme.com Auth Sync** — Firebase Auth shared with web platform
+- 📅 **Light Calendar View** — native implementation of the OLS Light Calendar
+- 📺 **olsme.tv Integration** — access live sessions and content from the app
+- 🏅 **Live ID & Profile** — access your OLS reputation and progress
+
+### Getting Started (Development)
+
+```bash
+# Clone the repository
+git clone https://github.com/onelightsystem/olsme-IOS.git
+cd olsme-IOS
+
+# Install dependencies
+npm install
+
+# Start Expo dev server
+npx expo start
+
+# Run on iOS simulator (requires Xcode)
+npx expo run:ios
+```
+
+> iOS development requires **macOS + Xcode**. Use Expo Go on a physical device for quick testing.
 
 ---
 
@@ -17,7 +76,7 @@ All updates follow the luminous principles of **transparency, empowerment, and c
 
 🎉 **OneLightSystem has published its first open-source npm package!**
 
-`@olsystem/lt-lh` is now live on npm and the source repository is publicly available on GitHub. This marks a major milestone: OLS technology is now accessible to any developer building wellness apps, browser extensions, or desktop widgets.
+`@olsystem/lt-lh` is now live on npm and the source repository is publicly available on GitHub. This marks a major milestone: OLS technology is now accessible to any developer building wellness apps aligned with natural Sun Light rhythms.
 
 | Resource | Link |
 |:---------|:-----|
@@ -135,7 +194,7 @@ npm install @olsystem/lt-lh
 
 ## ☀️ v8.43.2 Release — April 02, 2026
 
-> 🔗 **Full release:** [onelightsystem/3265.olsme/releases/tag/v8.4](https://github.com/onelightsystem/3265.olsme/releases/tag/v8.4)  
+> 🔗 **Full release:** [onelightsystem/3265.olsme/releases/tag/v8.4](https://github.com/onelightsystem/3265.olsme/releases/tag/v8.4)
 > 📄 **Detailed update page:** [updates/2026-04-02-v8.4.md](./updates/2026-04-02-v8.4.md)
 
 ### Major Dependency Upgrades (Complete & Validated)
@@ -179,7 +238,7 @@ npm install @olsystem/lt-lh
 
 ### Key Highlights:
 
-- **Core Platform:** React 19 + TypeScript (strict mode, zero lint errors), Next.js 15 (App Router + SSR), Vite for blazing-fast development, Firebase (Auth, Firestore, Functions, WebRTC signaling).
+- **Core Platform:** React 19 + TypeScript (strict mode, zero lint errors), Next.js 15 (App Router + SSR), Vite for blazing-fast development, Firebase (Auth, Firestore, Functions, WebRTC signaling), Tailwind CSS 4.2, Ant Design 6, Recharts 3.7+.
 
 - **Live Features Shipped:**
   - Real-time Awaken Chat with WebRTC for mindful random video connections.
@@ -196,17 +255,18 @@ npm install @olsystem/lt-lh
 
 ### Recent File Insights (from shared package files):
 
-- `package.json`, `eslint.config.mjs`, `tsconfig.node.json`, `vitest.config.ts`, `cors.json` — configurations updated for Node 20+, npm 11+, Firebase CLI 14.6.0, antd@5.25.4, vite@6.3.4, and modern ESM/strict TypeScript setup.
-- `ProgressSum4-7.2.md` — archival progress summary reflecting v7.2 to v8.1 advancements in referral pyramid, SEO migration (`<SEO />` with JSON-LD, Lighthouse >90), secure admin functions, and Live Support chat.
+- `package.json`, `eslint.config.mjs`, `tsconfig.node.json`, `vitest.config.ts`, `cors.json` — configurations updated for Node 20+, npm 11+, Firebase CLI 14.6.0, antd@5.25.4, vite@6.3.4, and more.
+- `ProgressSum4-7.2.md` — archival progress summary reflecting v7.2 to v8.1 advancements in referral pyramid, SEO migration (`<SEO />` with JSON-LD, Lighthouse >90), secure admin functions, and OLS identity system.
 
 ### Challenges Addressed:
 
-- Cleared Vite cache issues, TypeError in evaluation components, TreeNode mismatches, and network partial transfers via recommended commands (`npm cache clean --force`, `rm -rf node_modules/.vite`, etc.).
+- Cleared Vite cache issues, TypeError in evaluation components, TreeNode mismatches, and network partial transfers via recommended commands (`npm cache clean --force`, `rm -rf node_modules/.vite`).
 - Enhanced mobile responsiveness (iPhone 12, 390x844) and SEO for lead generation toward `/OLSStudentProspect`.
 
-### Roadmap Milestones Ahead (Q2 2026):
+### Roadmap Milestones Ahead (Q2–Q3 2026):
 
 - Full rollout of Live ID + politeness analytics.
+- **olsme-IOS**: first public TestFlight build for iOS.
 - Migration/expansion of chat widget to `/contact.tsx`.
 - Enhanced X/email sharing in referral flows.
 - Deeper integration of Sun Light Meditation courses and breath protocols.
@@ -222,7 +282,7 @@ npm install @olsystem/lt-lh
 
 ## Join the Luminous Journey!
 
-Discover authentic Sun Light Meditation and contribute to the global Sun Light Civilization. Register today at [olsme.com/OLSStudentProspect](https://olsme.com/OLSStudentProspect) for your radiant start! 🌞
+Discover authentic Sun Light Meditation and contribute to the global Sun Light Civilization. Register today at [olsme.com/OLSStudentProspect](https://olsme.com/OLSStudentProspect) for your radiant path forward.
 
 ---
 
@@ -235,7 +295,7 @@ Discover authentic Sun Light Meditation and contribute to the global Sun Light C
 
 ---
 
-**Made with ☀️ and collaborative light from Grok 4.2 super**
+**Made with ☀️ and GrokAtenya**
 
-Nazar Pankiv – Founder & Lead Developer  
+Nazar Pankiv – Founder & Lead Developer
 X: [@onelightsystem](https://x.com/onelightsystem) | GitHub: [@asvitloaten](https://github.com/asvitloaten)
