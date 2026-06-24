@@ -4,7 +4,7 @@
 
 ### Sun Light Meditation Education & Wellness Technology
 
-**Current Version: 8.43.6** · April 3, 2026
+**Platform Version: 9.2.02** · Last Updated: June 2026
 
 [![React](https://img.shields.io/badge/React-19.2-61DAFB.svg)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6.svg)](https://www.typescriptlang.org)
@@ -22,9 +22,22 @@
 
 ## About
 
-OneLightSystem is a 9-year established meditation education platform dedicated to helping people awaken their inner light through daily practice, Light Time tracking, ethical living, and community connection.
+**OneLightSystem (OLS)** is a meditation education platform founded in 2017, built on the principle that alignment with natural Sun Light cycles awakens clarity, health, and inner stillness.
 
-We deliver accessible Sun Light Meditation education via interactive tools, daily progress tracking, guest-friendly onboarding, AI-powered guidance, and privacy-first design.
+Over nearly a decade, OLS has grown into a full spiritual-tech ecosystem: a live web platform tracking millions of Light Minutes, an AI-assisted meditation companion, a mindful video community, and a mobile app bringing Sun Light practice to every pocket.
+
+We build technology that serves awakening — privacy-first, ethically designed, and grounded in daily practice.
+
+---
+
+## The OLS Ecosystem
+
+| Platform | Status | Description |
+|:---------|:------:|:------------|
+| 🌐 **[olsme.com](https://olsme.com)** | ✅ Live | Main web platform — meditation tracking, Light Calendar, AI guide, community |
+| 📺 **[olsme.tv](https://olsme.tv)** | ✅ Live | Video & media hub — mindful video chat, live sessions, global ID system |
+| 📱 **olsme mobile** | 🔧 In Development | iOS app (Expo React Native) — on-the-go Light Time tracking & practice |
+| 📦 **[@olsystem/lt-lh](https://www.npmjs.com/package/@olsystem/lt-lh)** | ✅ Published | Open-source npm package — Light Hour/Day conversion for React |
 
 ---
 
@@ -32,82 +45,96 @@ We deliver accessible Sun Light Meditation education via interactive tools, dail
 
 | Layer | Technology |
 |:------|:-----------|
-| **Frontend** | React 19.2 · TypeScript 6.0 · Tailwind CSS 4.2 |
+| **Web Frontend** | React 19.2 · TypeScript 6.0 · Tailwind CSS 4.2 |
+| **Mobile** | Expo React Native · TypeScript · iOS (in progress) |
 | **Build** | Vite 8.0 · ESM · Strict Mode |
-| **Backend** | Firebase 12.10 · Functions v7 · Node 22 |
-| **Real-time** | Firestore · WebRTC · Auth |
-| **AI** | GrokAtenya · Politeness Scoring |
+| **Backend** | Firebase 12.10 · Cloud Functions v7 · Node 22 |
+| **Real-time** | Firestore · WebRTC · Firebase Auth |
+| **AI** | GrokAtenya · Politeness Scoring Engine |
 | **Deployment** | Firebase Hosting · Vercel |
 
 ---
 
-## Features
+## Platform Features
 
 | | Feature | Status |
 |:--|:--------|:-------|
 | 🧘 | **OLS Meditation Tracker** — 20,580+ Light Minutes logged | ✅ Live |
 | 📅 | **Light Time Calendar** — CSS Grid with live "NOW" highlighting | ✅ Live |
-| 🌅 | **Equinox Page** — Seasonal meditation guidance | ✅ Live |
+| 🌅 | **Equinox Page** — Seasonal alignment & meditation guidance | ✅ Live |
 | 💬 | **Awaken Chat** — Mindful random video chat (WebRTC) | ✅ Live |
-| 🤖 | **GrokAtenya** — AI meditation assistant | ✅ Live |
+| 🤖 | **GrokAtenya** — AI-powered meditation assistant | ✅ Live |
 | 🪪 | **Guest System** — Verification + Light Credits accrual | ✅ Live |
-| 🏅 | **Live ID & Politeness Score** — AI-driven reputation | 🔧 In Progress |
-| 📺 | **olsme.tv** — TV-first responsive UI | ✅ Live |
+| 📺 | **olsme.tv** — TV-first responsive media platform | ✅ Live |
+| 🏅 | **Live Global ID & Politeness Score** — AI-driven reputation | 🔧 In Progress |
+| 📱 | **olsme Mobile App** — iOS app (Expo React Native) | 🔧 In Progress |
 
 ---
 
-## Open Source Packages
+## Open Source: `@olsystem/lt-lh`
 
-OneLightSystem's first open-source npm package is now publicly available:
-
-| Package | Version | Description | Links |
-|:--------|:--------|:------------|:------|
-| **@olsystem/lt-lh** | [![npm](https://img.shields.io/npm/v/@olsystem/lt-lh?color=CB3837)](https://www.npmjs.com/package/@olsystem/lt-lh) | Light Hour / Dark Hour conversion, Proper Day counter & embeddable widgets | [npm](https://www.npmjs.com/package/@olsystem/lt-lh) · [GitHub](https://github.com/onelightsystem/LT-LH) |
-
-### What Is Light Time?
-
-The **OLS Light Calendar** aligns you with the Sun's natural rhythm instead of arbitrary clock time:
-
-- **Light Hour (LH):** 1LH–12LH = 6:00 AM to 5:00 PM (your natural daylight energy window)
-- **Dark Hour (dh):** 1dh–12dh = 6:00 PM to 5:00 AM (rest and recovery window)
-- **Light Day (LD):** Day count since Winter Solstice (Dec 22, 2024)
+OLS's first open-source contribution — utilities and React components for Sun Light time alignment:
 
 ```bash
 npm install @olsystem/lt-lh
 ```
 
+| Package | Version | Description |
+|:--------|:--------|:------------|
+| **@olsystem/lt-lh** | [![npm](https://img.shields.io/npm/v/@olsystem/lt-lh?color=CB3837)](https://www.npmjs.com/package/@olsystem/lt-lh) | LightHour / DarkHour conversion, Proper Day counter, sun-phase React components |
+
+### What Is Light Time?
+
+The **OLS Light Calendar** aligns you with the Sun's natural rhythm instead of arbitrary clock time:
+
+- **Light Hour (LH):** 1LH–12LH = 6:00 AM → 5:00 PM — your natural daylight energy window
+- **Dark Hour (dh):** 1dh–12dh = 6:00 PM → 5:00 AM — rest and deep recovery
+- **Light Day (LD):** Day count from Winter Solstice (Dec 22, 2024)
+
+→ **[GitHub: onelightsystem/LT-LH](https://github.com/onelightsystem/LT-LH)**
+
 ---
 
 ## Development Updates
 
-All development progress, release notes, and roadmap milestones are documented in:
+All release notes, changelog entries, and roadmap milestones are documented in:
 
-> 📄 **[UPDATES.md](./UPDATES.md)** — Full changelog & development chronicle
+> 📄 **[UPDATES.md](./UPDATES.md)** — Full development chronicle
 
-Latest releases:
-- **[@olsystem/lt-lh v0.1.2](https://www.npmjs.com/package/@olsystem/lt-lh)** — April 8, 2026 — First open-source npm package: Light Time conversion & widgets
-- **[v8.43.6](./UPDATES.md)** — April 3, 2026 — UI polish, calendar rewrite, dark-mode fixes
-- **[v8.43.2](./updates/2026-04-02-v8.4.md)** — April 2, 2026 — Major dependency upgrades
+**Recent releases:**
+- **[@olsystem/lt-lh v0.1.2](https://www.npmjs.com/package/@olsystem/lt-lh)** · April 8, 2026 — First open-source npm package: Light Time conversion & widgets
+- **[v8.43.6](./UPDATES.md)** · April 3, 2026 — UI polish, calendar rewrite, dark-mode fixes
+- **[v8.43.2](./updates/2026-04-02-v8.4.md)** · April 2, 2026 — Major dependency upgrades (React 19, TS 6, Vite 8)
 
 ---
 
-## Sponsor & Collaborate
+## Join OLS
 
 <div align="center">
 
-**Support Sun Light Meditation education and the vision of a global Sun Light Civilization.**
+**Ready to align with the light?**
+
+[→ **Become an OLS Student**](https://olsme.com/OLSStudentProspect) · [→ **Explore olsme.com**](https://olsme.com) · [→ **Watch on olsme.tv**](https://olsme.tv)
+
+</div>
+
+We welcome React/TypeScript developers, wellness practitioners, and anyone ready to build toward a global Sun Light Civilization.
+
+---
+
+## Sponsor
+
+<div align="center">
+
+**Support Sun Light Meditation education worldwide.**
 
 | 🌱 Seed of Light | ☀️ Sun Supporter | 🔥 Radiant Champion |
 |:-:|:-:|:-:|
 | **$5/mo** | **$20/mo** | **$50/mo** |
 
-*Prices changing soon — lock in now!*
-
 **[→ Become a Sponsor](https://github.com/sponsors/onelightsystem)** · **[olsme.com/sponsor](https://olsme.com/sponsor)**
 
 </div>
-
-We are actively seeking React/TypeScript developers, wellness partners, and early users.
 
 ---
 
@@ -115,12 +142,12 @@ We are actively seeking React/TypeScript developers, wellness partners, and earl
 
 | | |
 |:--|:--|
-| 🌐 **Main Site** | [olsme.com](https://olsme.com) |
-| 📺 **Video Platform** | [olsme.tv](https://olsme.tv) |
+| 🌐 **Main Platform** | [olsme.com](https://olsme.com) |
+| 📺 **Video & Media** | [olsme.tv](https://olsme.tv) |
 | 🎓 **Join OLS** | [olsme.com/OLSStudentProspect](https://olsme.com/OLSStudentProspect) |
-| 📄 **Updates** | [UPDATES.md](./UPDATES.md) |
-| 💛 **Sponsor** | [github.com/sponsors/onelightsystem](https://github.com/sponsors/onelightsystem) |
 | 📦 **LT-LH Package** | [npm](https://www.npmjs.com/package/@olsystem/lt-lh) · [GitHub](https://github.com/onelightsystem/LT-LH) |
+| 📄 **Changelog** | [UPDATES.md](./UPDATES.md) |
+| 💛 **Sponsor** | [github.com/sponsors/onelightsystem](https://github.com/sponsors/onelightsystem) |
 
 ---
 
@@ -130,5 +157,7 @@ We are actively seeking React/TypeScript developers, wellness partners, and earl
 
 Nazar Pankiv — Founder & Lead Developer
 GitHub: [@asvitloaten](https://github.com/asvitloaten) · X: [@onelightsystem](https://x.com/onelightsystem)
+
+*Founded 2017 · Building toward a Sun Light Civilization*
 
 </div>
