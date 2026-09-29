@@ -24,7 +24,7 @@
 
 **OneLightSystem (OLS)** is a meditation education platform founded in 2017, built on the principle that alignment with natural Sun Light cycles awakens clarity, health, and inner stillness.
 
-Over nearly a decade, OLS has grown into a full spiritual-tech ecosystem: a live web platform tracking millions of Light Minutes, an AI-assisted meditation companion, a mindful video community, and a mobile app bringing Sun Light practice to every pocket.
+Over nearly a decade, OLS has grown into a full spiritual-tech ecosystem: a live web platform tracking millions of Light Minutes, an AI-assisted meditation companion, a mindful video community, an open-source Light Time package, and a growing mobile experience.
 
 We build technology that serves awakening — privacy-first, ethically designed, and grounded in daily practice.
 
@@ -36,6 +36,7 @@ We build technology that serves awakening — privacy-first, ethically designed,
 |:---------|:------:|:------------|
 | 🌐 **[olsme.com](https://olsme.com)** | ✅ Live | Main web platform — meditation tracking, Light Calendar, AI guide, community |
 | 📺 **[olsme.tv](https://olsme.tv)** | ✅ Live | Video & media hub — mindful video chat, live sessions, global ID system |
+| 📺 **[olsme-tv](https://github.com/onelightsystem/olsme-tv)** | ✅ Public | Refreshed public video-chat platform with mindful socializing, global ID, and politeness analysis |
 | 📱 **olsme mobile** | 🔧 In Development | iOS app (Expo React Native) — on-the-go Light Time tracking & practice |
 | 📦 **[@olsystem/lt-lh](https://www.npmjs.com/package/@olsystem/lt-lh)** | ✅ Published | Open-source npm package — Light Hour/Day conversion for React |
 
@@ -71,6 +72,14 @@ We build technology that serves awakening — privacy-first, ethically designed,
 
 ---
 
+### Recent Ecosystem Activity — September 29, 2026
+
+- 📺 **[olsme-tv](https://github.com/onelightsystem/olsme-tv)** was refreshed and made public on September 29, 2026. The repository continues development of the OLS-inspired video-chat platform for mindful socializing, global ID optimization, and politeness analysis.
+- 📦 **[@olsystem/lt-lh v0.4.0](https://www.npmjs.com/package/@olsystem/lt-lh)** was merged and released with the new Light Quarter color theming API, including `QUARTER_COLORS`, `getQuarterColor()`, and Q1–Q4 accent colors.
+- 🌞 **[3444.olsme](https://github.com/onelightsystem/3444.olsme)** is current through the September 28, 2026 update, including Q4 Light Time preview work, Light Quarter theming, OLS Health readability improvements, and cross-surface Q-color integration.
+
+---
+
 ## Open Source: `@olsystem/lt-lh`
 
 OLS's first open-source contribution — utilities and React components for Sun Light time alignment:
@@ -81,7 +90,7 @@ npm install @olsystem/lt-lh
 
 | Package | Version | Description |
 |:--------|:--------|:------------|
-| **@olsystem/lt-lh** | [![npm](https://img.shields.io/npm/v/@olsystem/lt-lh?color=CB3837)](https://www.npmjs.com/package/@olsystem/lt-lh) | LightHour / DarkHour conversion, Proper Day counter, sun-phase React components |
+| **@olsystem/lt-lh** | [![npm](https://img.shields.io/npm/v/@olsystem/lt-lh?color=CB3837)](https://www.npmjs.com/package/@olsystem/lt-lh) | LightHour / DarkHour conversion, Proper Day counter, seasonal tables, quarter theming, and app-ready utilities |
 
 ### What Is Light Time?
 
@@ -102,6 +111,7 @@ All release notes, changelog entries, and roadmap milestones are documented in:
 > 📄 **[UPDATES.md](./UPDATES.md)** — Full development chronicle
 
 **Recent releases:**
+- **[@olsystem/lt-lh v0.4.0](https://www.npmjs.com/package/@olsystem/lt-lh)** · September 28, 2026 — Light Quarter color theming API with `QUARTER_COLORS` and `getQuarterColor()`
 - **[@olsystem/lt-lh v0.1.2](https://www.npmjs.com/package/@olsystem/lt-lh)** · April 8, 2026 — First open-source npm package: Light Time conversion & widgets
 - **[v8.43.6](./UPDATES.md)** · April 3, 2026 — UI polish, calendar rewrite, dark-mode fixes
 - **[v8.43.2](./updates/2026-04-02-v8.4.md)** · April 2, 2026 — Major dependency upgrades (React 19, TS 6, Vite 8)
